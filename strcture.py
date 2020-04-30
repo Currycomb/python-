@@ -26,3 +26,45 @@ class Stack(object):
     def size(self):
         return len(self.items)
 
+
+class Queue(object):
+    def __init__(self):
+        self.items = []
+
+    def enqueue(self, item):
+        self.items.insert(0, item)    # 左端作为队尾，所以enqueue的复杂度为O(n)，dequeue的复杂度为O(1)
+
+    def dequeue(self):
+        if not self.items:
+            return self.items.pop()
+        else:
+            raise IndexError('dequeue from empty queue')
+
+    def is_empty(self):
+        return not self.items
+
+    def size(self):
+        return len(self.items)
+
+
+class Deque(obiect):
+    def __init__(self):
+        self.items = []
+
+    def add_front(self, item):
+        self.items.append(item)
+
+    def add_rear(self, item):
+        self.items.insert(0, item)
+
+    def is_empty(self):
+        return not self.items
+
+    def remove_front(self):
+        if not self.items:
+            return self.items.pop()
+
+    def remove_rear(self):
+        if not
+
+    def size(self):
