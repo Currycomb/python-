@@ -47,7 +47,7 @@ class Queue(object):
         return len(self.items)
 
 
-class Deque(obiect):
+class Deque(object):
     def __init__(self):
         self.items = []
 
@@ -64,7 +64,7 @@ class Deque(obiect):
         if not self.items:
             return self.items.pop()
 
-    def remove_rear(self):
-        if not
+    # def remove_rear(self):
+        # if not
 
-    def size(self):
+    # def size(self):
